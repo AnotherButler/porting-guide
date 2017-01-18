@@ -53,11 +53,11 @@ The next step is to enable the test harness dependencies. To run the test suite,
 
 The ```gpio_s``` is for referencing memory-mapped GPIO registers and passing related pin information or other IO operation data that the HAL needs. These structures are defined in ```objects.h```. The required implementation definition is in ```mbed-os\hal\gpio_api.h```.
 
-### SERIAL
+### Serial
 
-The ```serial_s``` is for referencing memory-mapped Serial registers and passing related pin and peripheral operation information data that the HAL needs. These structures are defined in ```objects.h```. The required implementation definition is in ```mbed-os\hal\serial_api.h```.
+The ```serial_s``` is for referencing memory-mapped serial registers and passing related pin and peripheral operation information data that the HAL needs. These structures are defined in ```objects.h```. The required implementation definition is in ```mbed-os\hal\serial_api.h```.
 
-### US TICKER
+### Microsecond ticker
 
 The microsecond ticker is a system resource that many APIs and other timing utilities use. It needs a one microsecond resolution and should be implemented using a free-running hardware counter or timer with match register. The required implementation definition is in ```mbed-os\hal\us_ticker_api.h```.
 
@@ -88,7 +88,3 @@ SLEEP            |   sleep_api.h
 SPI SPISLAVE     |   spi_api.h
 TRNG             |  trng_api.h
 ```
-
-## Adding a new board or module
-
-Coming soon.
